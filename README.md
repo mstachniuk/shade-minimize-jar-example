@@ -1,12 +1,14 @@
-= Shade Minimize Jar Example
+# Shade Minimize Jar Example
 
 This project present minimum example how Minimizing a Fat Jar works in Maven and Gradle.
+
+The following command:
 
 ```shell
 mvn clean install
 ```
 
-produce a Fat Jar that contains only part of Guava package:
+produces a Fat Jar that contains only part of Guava package:
 
 ```shell
 jar -tf target/shade-minimize-jar-example-0.0.1.jar | grep .class
